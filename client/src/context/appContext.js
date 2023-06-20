@@ -311,7 +311,7 @@ const AppProvider = ({children})=>{
             type: GET_CURR_USER_BEGIN,
         })
         try{
-            const {data} = await authFetch("/api/v1/auth/get-current-user");
+            const {data} = await authFetch("/auth/get-current-user");
                                       
             const {user, location} = data;
             dispatch({
